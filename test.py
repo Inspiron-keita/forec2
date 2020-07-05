@@ -5,7 +5,7 @@ import time
 def _main():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
-    driver = webdriver.Chrome(executable_path=r"/home/src/bin/chromedriver.exe",options=options)
+    driver = webdriver.Chrome(executable_path=r"/usr/bin/google-chrome",options=options)
 
     driver.get('https://www.google.co.jp/')
     search = driver.find_element_by_name('q')
